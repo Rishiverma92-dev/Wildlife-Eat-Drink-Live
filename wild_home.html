@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife</title>
+    <link rel="stylesheet" href="wild_home.css">
+</head>
+<body>
+    <header>
+        <h2>Wildlife</h2>
+    </header>
+    <section class="hero">
+        <video id="mainVideo" autoplay muted loop src="videos/leopard.mp4">
+            <!-- <source src="videos/leopard.mp4" type="video/mp4"> -->
+        </video>
+
+        <div class="content">
+            <h1 id="title">Leopard</h1>
+            <p id="description">
+                A powerful predator found in forests. Silent, fast and deadly.
+            </p>
+        </div>
+        <div class="thumbanils">
+            <div class="thumb" onclick="changeVideo(0)">
+                <img src="snake.jpg">
+            </div>
+            <div class="thumb" onclick="changeVideo(1)">
+                <img src="racoon.jpg">
+            </div>
+            <div class="thumb" onclick="changeVideo(2)">
+                <img src="kachua.jpg">
+            </div>
+            <div class="thumb" onclick="changeVideo(3)">
+                <img src="dinasaur.jpg">
+            </div>
+            <div class="thumb" onclick="changeVideo(4)">
+                <img src="elephant.jpg">
+            </div>
+            <div class="thumb" onclick="changeVideo(5)">
+                <img src="crane.jpg">
+            </div>
+        </div>
+    </section>
+    <script src="wild_home.js"></script>
+</body>
+</html>
