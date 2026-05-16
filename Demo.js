@@ -24,7 +24,7 @@ for(let i in Cards)
     Cards[i].addEventListener("click", ()=>
     {
  
-        Main.style.backgroundImage = `url(./image/img${2 + +i}.jpg)`
+        Main.style.backgroundImage = `url(./images/img${2 + +i}.jpg)`
 
     });
 }

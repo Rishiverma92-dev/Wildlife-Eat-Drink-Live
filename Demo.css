@@ -52,7 +52,7 @@ nav ul li a
 main
 {
     height: 100vh;
-    background-image: url("./image/img1.jpg") ;
+    background-image: url("./images/img1.jpg") ;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -135,24 +135,24 @@ main
 
 .Card:first-child
 {
-    background-image: url("./image/img2.jpg");
+    background-image: url("./images/img2.jpg");
 }
 
 .Card:nth-child(2)
 {
-    background-image: url("./image/img3.jpg");
+    background-image: url("./images/img3.jpg");
 }
 .Card:nth-child(3)
 {
-    background-image: url("./image/img4.jpg");
+    background-image: url("./images/img4.jpg");
 }
 .Card:nth-child(4)
 {
-    background-image: url("./image/img5.jpg");
+    background-image: url("./images/img5.jpg");
 }
 .Card:nth-child(5)
 {
-    background-image: url("./image/img6.jpg");
+    background-image: url("./images/img6.jpg");
 }
 
 
@@ -160,5 +160,86 @@ main
 .Card:hover
 {
     transform: scale(1.2);
+
+}
+@media (max-width: 768px)
+{
+
+    nav
+    {
+        padding: 15px 20px;
+        justify-content: center;
+    }
+
+    nav ul
+    {
+        column-gap: 18px;
+    }
+
+    nav ul li
+    {
+        font-size: 0.8rem;
+    }
+
+
+    main
+    {
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
+
+    #Content
+    {
+        width: 90%;
+        left: 20px;
+        top: 70px;
+    }
+
+    #Content p:first-child
+    {
+        font-size: 1rem;
+    }
+
+    #Content h2
+    {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 10px 0;
+    }
+
+    #Content p:last-child
+    {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+
+    #Cards
+    {
+        position: relative;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        margin-top: 120px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+
+        padding: 20px;
+        height: auto;
+    }
+
+    .Card
+    {
+        height: 220px;
+        transform: none !important;
+    }
+
+    .Card:hover
+    {
+        transform: scale(1.03);
+    }
 
 }
